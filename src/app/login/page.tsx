@@ -17,7 +17,7 @@ export default function LoginPage() {
     try {
       setLoading(true)
       const res = await axios.post("/api/users/login", user);
-      console.log(res.data);
+      
       if (res.data.success) {
         router.push("/dashboard");
       }
