@@ -32,7 +32,7 @@ export default function SignupPage() {
     try{
       setLoading(true);
       const res = await axios.post("/api/users/signup", user);
-      console.log(res.data);
+      //console.log(res.data);
       if (res.data.success) {
         router.push("/login");
       }

@@ -10,7 +10,7 @@ import jwt from "jsonwebtoken";
 export async function POST(request: NextRequest) {
    await connect();
   try {
-    console.log("Login route")
+    //console.log("Login route")
     const reqBody = await request.json();
     const { email, password } = reqBody;
 
